@@ -2,16 +2,12 @@ function out = train_MTCNN(XTrain, T1Train, T2Train)
     % Training MTCNN model
     %% Load Data
     % test
-    % Datastore for in-memory data
 
+    % Datastore for in-memory data
     T2Train = round(T2Train,2);
     dsXTrain = arrayDatastore(XTrain,"IterationDimension",4); 
     dsT1Train = arrayDatastore(T1Train);
     dsT2Train = arrayDatastore(T2Train);
-
-
-    
-    
     dsTrain = combine(dsXTrain,dsT1Train,dsT2Train);
 
 
