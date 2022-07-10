@@ -1,17 +1,7 @@
 function out = train_MTCNN(XTrain, T1Train, T2Train)
     % Training MTCNN model
     %% Load Data
-  %  [XTrain,T1Train,T2Train] = digitTrain4DArrayData;
-   % XTrain = imresize(XTrain,[12 12]);
-   % XTrain= dataset(:,1);
-   % [XTrain T2Train] = convert_dataset_to_array(dataset);
-%         T1Train= dataset(:,2);
-%         T1Train = categorical(T1Train);
-
-    % How to resize image in datastore
-%     T1Train = T1Train';
-%     T2Train = cell2mat(struct2cell(T2Train));
-%     T2Train = reshape(T2Train,[1, 14 size(T2Train,3)]);
+    % test
     % Datastore for in-memory data
 
     T2Train = round(T2Train,2);
